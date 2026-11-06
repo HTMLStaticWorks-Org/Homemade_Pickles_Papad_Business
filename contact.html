@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us & Enquiries | RIVAYA</title>
+  <meta name="description" content="Reach out to Rivaya for authentic South Indian pickle orders, bulk gifting, retail inquiries, or culinary questions. We are here to help." />
+  <meta property="og:title" content="RIVAYA — Contact Our Team" />
+  <meta property="og:description" content="Let's talk about good food. Reach our kitchen team for product orders, bulk supply, and festive gifting." />
+  
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Favicon (Traditional Indian Pickle Bharani Vessel Brand Logo) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+</head>
+<body>
+
+  <!-- GLOBAL HEADER -->
+    <!-- TOP ANNOUNCEMENT BAR (DISCOUNT & FESTIVE OFFERS) -->
+    <!-- TOP ANNOUNCEMENT BAR (CONTINUOUS MOVING TICKER) -->
+  <aside class="site-announcement-bar" aria-label="Special Offers">
+    <div class="announcement-ticker-track">
+      <div class="announcement-ticker-content">
+        <span class="announcement-pill"><i class="bi bi-tag-fill"></i> Festive Offer</span>
+        <span class="announcement-text">Get <strong>15% FLAT OFF</strong> on your first order • Use Code: <span class="coupon-code-pill" onclick="copyCouponCode('RIVAYA15')" title="Click to copy coupon">RIVAYA15 <i class="bi bi-copy"></i></span></span>
+        <span class="announcement-sep">•</span>
+        <span class="announcement-text"><i class="bi bi-truck"></i> Free Delivery & Traditional Gift Packing above ₹999</span>
+        <span class="announcement-sep">•</span>
+        <span class="announcement-text"><i class="bi bi-sun"></i> 100% Rooftop Solar Cured • Cold-Pressed Gingelly Oil</span>
+        <span class="announcement-sep">•</span>
+        <a href="products.html" class="announcement-link">Shop Collection <i class="bi bi-arrow-right"></i></a>
+        <span class="announcement-sep">•</span>
+      </div>
+      <div class="announcement-ticker-content" aria-hidden="true">
+        <span class="announcement-pill"><i class="bi bi-tag-fill"></i> Festive Offer</span>
+        <span class="announcement-text">Get <strong>15% FLAT OFF</strong> on your first order • Use Code: <span class="coupon-code-pill" onclick="copyCouponCode('RIVAYA15')" title="Click to copy coupon">RIVAYA15 <i class="bi bi-copy"></i></span></span>
+        <span class="announcement-sep">•</span>
+        <span class="announcement-text"><i class="bi bi-truck"></i> Free Delivery & Traditional Gift Packing above ₹999</span>
+        <span class="announcement-sep">•</span>
+        <span class="announcement-text"><i class="bi bi-sun"></i> 100% Rooftop Solar Cured • Cold-Pressed Gingelly Oil</span>
+        <span class="announcement-sep">•</span>
+        <a href="products.html" class="announcement-link">Shop Collection <i class="bi bi-arrow-right"></i></a>
+        <span class="announcement-sep">•</span>
+      </div>
+    </div>
+  </aside>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Rivaya Home">
+        <svg class="logo-vessel-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 6H30V10H18V6Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M14 10C14 10 12 16 12 22C12 36 17 42 24 42C31 42 36 36 36 22C36 16 34 10 34 10H14Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M12 20C17 21.5 31 21.5 36 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="24" cy="30" r="4" fill="currentColor"/>
+        </svg>
+        <div class="logo-text-group">
+          <span class="logo-title">RIVAYA</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="bulk-gifting.html" class="nav-link">Bulk & Gifting</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-icon-only theme-toggle-btn theme-btn-desktop" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button type="button" class="btn-icon-only rtl-toggle-btn rtl-btn-desktop" aria-label="Toggle text direction">
+          <span class="btn-label" style="font-size: 0.75rem; font-weight: 700;">RTL</span>
+        </button>
+        <button type="button" class="cart-trigger" aria-label="View shopping basket">
+          <i class="bi bi-bag-heart"></i>
+          <span class="cart-badge" aria-live="polite">0</span>
+        </button>
+        <button type="button" class="btn btn-primary btn-sm order-now-btn">
+          Order Now
+        </button>
+        <button type="button" class="menu-trigger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo" style="gap: 0.65rem;">
+        <svg class="logo-vessel-icon" style="width: 28px; height: 28px;" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 6H30V10H18V6Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M14 10C14 10 12 16 12 22C12 36 17 42 24 42C31 42 36 36 36 22C36 16 34 10 34 10H14Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M12 20C17 21.5 31 21.5 36 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="24" cy="30" r="4" fill="currentColor"/>
+        </svg>
+        <span class="logo-title" style="font-size: 1.25rem;">RIVAYA</span>
+      </div>
+      <button type="button" class="btn-icon-only mobile-drawer-close" aria-label="Close menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <!-- Quick Cart Access inside Hamburger Menu -->
+    <div class="mobile-drawer-cart-box">
+      <button type="button" class="mobile-drawer-cart-trigger cart-trigger" aria-label="View shopping basket">
+        <div class="drawer-cart-content">
+          <i class="bi bi-bag-heart"></i>
+          <div>
+            <div class="drawer-cart-title">Shopping Basket</div>
+            <div class="drawer-cart-sub">View items & checkout</div>
+          </div>
+        </div>
+        <span class="cart-badge drawer-cart-badge" aria-live="polite">0</span>
+      </button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <i class="bi bi-chevron-right"></i></a>
+      <a href="home-2.html" class="mobile-nav-link">Home 2 <i class="bi bi-chevron-right"></i></a>
+      <a href="products.html" class="mobile-nav-link">Products <i class="bi bi-chevron-right"></i></a>
+      <a href="about.html" class="mobile-nav-link">About <i class="bi bi-chevron-right"></i></a>
+      <a href="services.html" class="mobile-nav-link">Services <i class="bi bi-chevron-right"></i></a>
+      <a href="bulk-gifting.html" class="mobile-nav-link">Bulk & Gifting <i class="bi bi-chevron-right"></i></a>
+      <a href="contact.html" class="mobile-nav-link active">Contact <i class="bi bi-chevron-right"></i></a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <div class="mobile-toggles-row">
+        <button type="button" class="toggle-card-btn theme-toggle-btn">
+          <i class="bi bi-moon-stars-fill"></i>
+          <span class="btn-label">Dark</span>
+        </button>
+        <button type="button" class="toggle-card-btn rtl-toggle-btn">
+          <i class="bi bi-translate"></i>
+          <span class="btn-label">RTL</span>
+        </button>
+      </div>
+      <button type="button" class="btn btn-primary order-now-btn" style="width: 100%;">
+        Order Now
+      </button>
+    </div>
+  </aside>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" role="dialog" aria-modal="true" aria-label="Your Shopping Basket">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">
+        <i class="bi bi-bag-heart-fill" style="color: var(--color-secondary);"></i>
+        Your Basket
+      </h3>
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <span class="cart-drawer-count">0 items</span>
+        <button type="button" class="btn-icon-only cart-drawer-close" aria-label="Close basket">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+    </div>
+    <div class="cart-items-container"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-shipping-notice">
+        <i class="bi bi-truck"></i>
+        <span>Free traditional packing on orders above ₹999</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Estimated Subtotal</span>
+        <span class="cart-subtotal-val" style="font-weight: 600;">₹0</span>
+      </div>
+      <div class="cart-total-row">
+        <span>Total (Demo)</span>
+        <span class="cart-total-val">₹0</span>
+      </div>
+      <button type="button" class="btn btn-secondary cart-checkout-btn" style="width: 100%;">
+        <i class="bi bi-send-check"></i> Enquire / Order Summary
+      </button>
+      <p class="cart-demo-notice">
+        * Prototype retail store: prices shown are illustrative demo values.
+      </p>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MAIN CONTENT: CONTACT
+       ====================================================================== -->
+  <main id="mainContent">
+
+    <!-- ------------------------------------------------------------------
+         SECTION 01 — CONTACT HERO
+         ------------------------------------------------------------------ -->
+    <section class="page-hero-banner hero-contact" aria-labelledby="contactHeroHeadline">
+      <div class="container hero-banner-container">
+        <span class="section-meta">We Welcome Your Message</span>
+        <h1 id="contactHeroHeadline" class="section-heading">
+          LET'S TALK ABOUT GOOD FOOD.
+        </h1>
+        <p class="section-description" style="margin-inline: auto;">
+          For product enquiries, bulk orders, gifting ideas or anything else, we would love to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 02 & 03 — CONTACT INFORMATION & CONTACT FORM
+         ------------------------------------------------------------------ -->
+    <section class="section-spacing" aria-label="Contact Channels & Form">
+      <div class="container contact-layout-grid">
+        <!-- SECTION 02: Contact Information Placeholders -->
+        <div class="contact-info-column">
+          <div>
+            <span class="section-meta">Direct Reach</span>
+            <h2 style="font-size: 1.85rem; margin-bottom: 0.5rem;">GET IN TOUCH DIRECTLY</h2>
+            <p style="font-size: 0.95rem; color: var(--text-muted);">
+              Whether you need guidance choosing the right pickle variety or wish to partner with us, our customer desk is happy to assist.
+            </p>
+          </div>
+
+          <!-- Channel 1: Phone -->
+          <div class="contact-channel-card">
+            <div class="channel-icon">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="channel-details">
+              <h4>Direct Telephone</h4>
+              <p>+91 98765 43210 (Client Placeholder)</p>
+              <span style="font-size: 0.78rem; color: var(--text-light);">Direct line for orders & status</span>
+            </div>
+          </div>
+
+          <!-- Channel 2: Email -->
+          <div class="contact-channel-card">
+            <div class="channel-icon">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div class="channel-details">
+              <h4>Electronic Mail</h4>
+              <p>care@rivaya.demo</p>
+              <span style="font-size: 0.78rem; color: var(--text-light);">We respond within one business day</span>
+            </div>
+          </div>
+
+          <!-- Channel 3: Business Hours -->
+          <div class="contact-channel-card">
+            <div class="channel-icon">
+              <i class="bi bi-clock-fill"></i>
+            </div>
+            <div class="channel-details">
+              <h4>Kitchen & Studio Hours</h4>
+              <p>Monday – Saturday: 9:00 AM – 7:00 PM IST</p>
+              <span style="font-size: 0.78rem; color: var(--text-light);">Sundays reserved for batch prep</span>
+            </div>
+          </div>
+
+          <!-- Channel 4: Address Placeholder -->
+          <div class="contact-channel-card">
+            <div class="channel-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="channel-details">
+              <h4>Packing Studio & Dispatch</h4>
+              <p>Heritage Kitchen & Packing Studio, South India</p>
+              <span style="font-size: 0.78rem; color: var(--text-light);">(Heritage Kitchen & Dispatch Center)</span>
+            </div>
+          </div>
+
+          <!-- Channel 5: Social Media Communities -->
+          <div class="contact-social-connect-card">
+            <h4>Follow &amp; Connect With Us</h4>
+            <p>Join our food family for seasonal curing updates, grandmother recipes, and courtyard videos.</p>
+            <div class="contact-social-icons-row">
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="contact-social-pill instagram" aria-label="Follow Rivaya on Instagram">
+                <i class="bi bi-instagram"></i>
+                <span>Instagram</span>
+              </a>
+              <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="contact-social-pill whatsapp" aria-label="Chat with Rivaya on WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener" class="contact-social-pill facebook" aria-label="Follow Rivaya on Facebook">
+                <i class="bi bi-facebook"></i>
+                <span>Facebook</span>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener" class="contact-social-pill youtube" aria-label="Watch Rivaya on YouTube">
+                <i class="bi bi-youtube"></i>
+                <span>YouTube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 03: Contact Form with Frontend Validation -->
+        <div>
+          <div class="form-card">
+            <span class="section-meta">Send an Enquiry</span>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">HOW CAN WE ASSIST YOU?</h3>
+
+            <form id="contactForm" novalidate>
+              <div class="form-grid-2col">
+                <!-- Full Name -->
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Full Name <span class="req">*</span></label>
+                  <input type="text" id="contactName" class="form-control" placeholder="e.g. Senthil Kumar" required />
+                  <span class="form-error-msg">Please enter your name.</span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email Address <span class="req">*</span></label>
+                  <input type="email" id="contactEmail" class="form-control" placeholder="senthil@example.com" required />
+                  <span class="form-error-msg">Please enter a valid email address.</span>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                  <label for="contactPhone" class="form-label">Phone Number <span class="req">*</span></label>
+                  <input type="tel" id="contactPhone" class="form-control" placeholder="+91 98765 43210" required />
+                  <span class="form-error-msg">Please enter a valid phone number.</span>
+                </div>
+
+                <!-- Enquiry Type -->
+                <div class="form-group">
+                  <label for="contactEnquiryType" class="form-label">Enquiry Type <span class="req">*</span></label>
+                  <select id="contactEnquiryType" class="form-control" required>
+                    <option value="">Select enquiry subject...</option>
+                    <option value="product">Product Enquiry</option>
+                    <option value="bulk">Bulk Order</option>
+                    <option value="gifting">Gifting</option>
+                    <option value="retail">Retail Partnership</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="form-error-msg">Please select an enquiry type.</span>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group full-width">
+                  <label for="contactMsg" class="form-label">Your Message <span class="req">*</span></label>
+                  <textarea id="contactMsg" class="form-control" rows="5" placeholder="Tell us how we can help you with your order, products, or questions..." required></textarea>
+                  <span class="form-error-msg">Please type your message.</span>
+                </div>
+              </div>
+
+              <div style="margin-top: 1.5rem;">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  <i class="bi bi-send-fill"></i> SEND YOUR ENQUIRY
+                </button>
+              </div>
+
+              <!-- Success Banner Confirmation -->
+              <div class="form-success-banner" role="status" aria-live="polite">
+                <i class="bi bi-check-circle-fill" style="font-size: 1.5rem; display: block; margin-bottom: 0.25rem;"></i>
+                <strong>Message Dispatched Successfully!</strong><br />
+                Thank you for reaching out to Rivaya. Our team will review your enquiry and get back to you soon.
+              </div>
+            </form>
+          </div>
+            <!-- Direct WhatsApp Assistance & Tasting Guarantee Card -->
+            <div class="form-support-card">
+              <div class="support-card-header">
+                <div class="support-icon-badge">
+                  <i class="bi bi-whatsapp"></i>
+                </div>
+                <div>
+                  <span class="support-kicker">INSTANT KITCHEN HELP</span>
+                  <h4>Prefer a Direct Conversation?</h4>
+                </div>
+              </div>
+              <p>Need immediate order status, custom spice adjustments, or wedding tasting samples? Skip the email queue and connect directly with our kitchen cooks on WhatsApp.</p>
+              <div class="support-actions-row">
+                <a href="https://wa.me/919876543210?text=Hello%20Rivaya!%20I%20have%20an%20enquiry%20regarding%20homemade%20pickles" 
+                   target="_blank" rel="noopener" class="btn-whatsapp-pill">
+                  <i class="bi bi-whatsapp"></i> CHAT ON WHATSAPP
+                </a>
+                <span class="support-reply-time"><i class="bi bi-clock-history"></i> Replies in &lt; 15 mins</span>
+              </div>
+              <div class="support-guarantees">
+                <span><i class="bi bi-patch-check-fill text-gold"></i> 100% Homemade Authenticity</span>
+                <span><i class="bi bi-box-seam-fill text-gold"></i> Zero-Breakage Transit Guarantee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    
+
+  
+    <!-- ------------------------------------------------------------------
+         SECTION 03 — INTERACTIVE GOOGLE MAP & STUDIO LOCATION
+         ------------------------------------------------------------------ -->
+    <section class="contact-map-section" aria-labelledby="mapHeadline">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin-inline: auto; margin-bottom: 2.5rem;">
+          <span class="section-meta">Visit Our Kitchen Studio</span>
+          <h2 id="mapHeadline" class="section-heading">FIND US ON THE MAP</h2>
+          <p class="section-description" style="margin-inline: auto;">
+            Experience the aromas of roasted fenugreek and sun-curing Bharani jars. Visitors and tasting inquiries are warmly welcomed.
+          </p>
+        </div>
+
+        <div class="map-container-wrap">
+          <!-- Google Maps Embed for South India Artisan Kitchen Studio -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15545.928424269177!2d80.24713!3d13.067439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266133989c933%3A0x6b7724a87383bb17!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            title="Rivaya Kitchen Studio Map Location"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+
+          <!-- Floating Map Info Card -->
+          <div class="map-floating-info">
+            <h4><i class="bi bi-geo-alt-fill text-gold"></i> Rivaya Heritage Studio</h4>
+            <p>Door No. 42, Traditional Agro Heritage Park, South India.<br /><strong>Open:</strong> Mon &ndash; Sat, 9:00 AM &ndash; 7:00 PM IST</p>
+            <a href="https://maps.google.com/?q=Chennai,Tamil+Nadu" target="_blank" rel="noopener" class="btn-directions">
+              GET DIRECTIONS <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-brand-logo" aria-label="Rivaya Home">
+            <svg class="logo-vessel-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M18 6H30V10H18V6Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 10C14 10 12 16 12 22C12 36 17 42 24 42C31 42 36 36 36 22C36 16 34 10 34 10H14Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 20C17 21.5 31 21.5 36 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="30" r="4" fill="currentColor"/>
+            </svg>
+            <span class="logo-title">RIVAYA</span>
+          </a>
+          <p class="footer-brand-desc">
+            Authentic South Indian pickles, sun-dried papads, and handcrafted meal accompaniments. Rooted in tradition. Made with love.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-btn" aria-label="Visit Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Visit Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Connect on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Watch YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2 (Editorial)</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="about.html">About Brand</a></li>
+            <li><a href="services.html">Services Hub</a></li>
+            <li><a href="bulk-gifting.html">Bulk & Gifting</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Categories</h4>
+          <ul class="footer-links-list">
+            <li><a href="products.html?category=mango-pickles">Mango Pickles</a></li>
+            <li><a href="products.html?category=lemon-pickles">Lemon Pickles</a></li>
+            <li><a href="products.html?category=vegetable-pickles">Vegetable Pickles</a></li>
+            <li><a href="products.html?category=garlic-special-pickles">Garlic & Special</a></li>
+            <li><a href="products.html?category=traditional-papad">Sun-Dried Papad</a></li>
+            <li><a href="products.html?category=appalam">South Appalam</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Gifting & Orders</h4>
+          <ul class="footer-links-list">
+            <li><a href="bulk-gifting.html">Festive Gift Boxes</a></li>
+            <li><a href="bulk-gifting.html">Wedding Kalyanam Hampers</a></li>
+            <li><a href="bulk-gifting.html">Bulk Restaurant Supply</a></li>
+            <li><a href="services.html">Everyday Deliveries</a></li>
+            <li><a href="services.html#storageCare">Storage Guidelines</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Get in Touch</h4>
+          <ul class="footer-links-list">
+            <li class="footer-contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>Heritage Kitchen & Packing Studio, South India (Demo Location)</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <span>care@rivaya.demo</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-telephone"></i>
+              <span>+91 98765 43210 (Demo Contact)</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-clock"></i>
+              <span>Mon – Sat: 9:00 AM – 7:00 PM IST</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>&copy; 2026 Rivaya. All rights reserved. Client Prototype Experience.</span>
+        <span>Crafted with pride • Authentic South Indian Culinary Heritage</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

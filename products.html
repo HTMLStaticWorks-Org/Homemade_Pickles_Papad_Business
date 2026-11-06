@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Homemade Collection | RIVAYA</title>
+  <meta name="description" content="Explore our authentic South Indian pickles, sun-dried papads, and traditional meal accompaniments. Handcrafted with cold-pressed oils and heirloom spices." />
+  <meta property="og:title" content="RIVAYA — Products Catalogue" />
+  <meta property="og:description" content="Traditional flavours, carefully prepared and packed for your everyday meals." />
+  
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Favicon (Traditional Indian Pickle Bharani Vessel Brand Logo) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+</head>
+<body>
+
+  <!-- ======================================================================
+       GLOBAL HEADER & NAVIGATION
+       ====================================================================== -->
+    <!-- TOP ANNOUNCEMENT BAR (DISCOUNT & FESTIVE OFFERS) -->
+    <!-- TOP ANNOUNCEMENT BAR (CONTINUOUS MOVING TICKER) -->
+  <aside class="site-announcement-bar" aria-label="Special Offers">
+    <div class="announcement-ticker-track">
+      <div class="announcement-ticker-content">
+        <span class="announcement-pill"><i class="bi bi-tag-fill"></i> Festive Offer</span>
+        <span class="announcement-text">Get <strong>15% FLAT OFF</strong> on your first order • Use Code: <span class="coupon-code-pill" onclick="copyCouponCode('RIVAYA15')" title="Click to copy coupon">RIVAYA15 <i class="bi bi-copy"></i></span></span>
+        <span class="announcement-sep">•</span>
+        <span class="announcement-text"><i class="bi bi-truck"></i> Free Delivery & Traditional Gift Packing above ₹999</span>
+        <span class="announcement-sep">•</span>
+        <span class="announcement-text"><i class="bi bi-sun"></i> 100% Rooftop Solar Cured • Cold-Pressed Gingelly Oil</span>
+        <span class="announcement-sep">•</span>
+        <a href="products.html" class="announcement-link">Shop Collection <i class="bi bi-arrow-right"></i></a>
+        <span class="announcement-sep">•</span>
+      </div>
+      <div class="announcement-ticker-content" aria-hidden="true">
+        <span class="announcement-pill"><i class="bi bi-tag-fill"></i> Festive Offer</span>
+        <span class="announcement-text">Get <strong>15% FLAT OFF</strong> on your first order • Use Code: <span class="coupon-code-pill" onclick="copyCouponCode('RIVAYA15')" title="Click to copy coupon">RIVAYA15 <i class="bi bi-copy"></i></span></span>
+        <span class="announcement-sep">•</span>
+        <span class="announcement-text"><i class="bi bi-truck"></i> Free Delivery & Traditional Gift Packing above ₹999</span>
+        <span class="announcement-sep">•</span>
+        <span class="announcement-text"><i class="bi bi-sun"></i> 100% Rooftop Solar Cured • Cold-Pressed Gingelly Oil</span>
+        <span class="announcement-sep">•</span>
+        <a href="products.html" class="announcement-link">Shop Collection <i class="bi bi-arrow-right"></i></a>
+        <span class="announcement-sep">•</span>
+      </div>
+    </div>
+  </aside>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Rivaya Home">
+        <svg class="logo-vessel-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 6H30V10H18V6Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M14 10C14 10 12 16 12 22C12 36 17 42 24 42C31 42 36 36 36 22C36 16 34 10 34 10H14Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M12 20C17 21.5 31 21.5 36 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="24" cy="30" r="4" fill="currentColor"/>
+        </svg>
+        <div class="logo-text-group">
+          <span class="logo-title">RIVAYA</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home-2.html" class="nav-link">Home 2</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="bulk-gifting.html" class="nav-link">Bulk & Gifting</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-icon-only theme-toggle-btn theme-btn-desktop" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button type="button" class="btn-icon-only rtl-toggle-btn rtl-btn-desktop" aria-label="Toggle text direction">
+          <span class="btn-label" style="font-size: 0.75rem; font-weight: 700;">RTL</span>
+        </button>
+        <button type="button" class="cart-trigger" aria-label="View shopping basket">
+          <i class="bi bi-bag-heart"></i>
+          <span class="cart-badge" aria-live="polite">0</span>
+        </button>
+        <button type="button" class="btn btn-primary btn-sm order-now-btn">
+          Order Now
+        </button>
+        <button type="button" class="menu-trigger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo" style="gap: 0.65rem;">
+        <svg class="logo-vessel-icon" style="width: 28px; height: 28px;" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 6H30V10H18V6Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M14 10C14 10 12 16 12 22C12 36 17 42 24 42C31 42 36 36 36 22C36 16 34 10 34 10H14Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M12 20C17 21.5 31 21.5 36 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="24" cy="30" r="4" fill="currentColor"/>
+        </svg>
+        <span class="logo-title" style="font-size: 1.25rem;">RIVAYA</span>
+      </div>
+      <button type="button" class="btn-icon-only mobile-drawer-close" aria-label="Close menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <!-- Quick Cart Access inside Hamburger Menu -->
+    <div class="mobile-drawer-cart-box">
+      <button type="button" class="mobile-drawer-cart-trigger cart-trigger" aria-label="View shopping basket">
+        <div class="drawer-cart-content">
+          <i class="bi bi-bag-heart"></i>
+          <div>
+            <div class="drawer-cart-title">Shopping Basket</div>
+            <div class="drawer-cart-sub">View items & checkout</div>
+          </div>
+        </div>
+        <span class="cart-badge drawer-cart-badge" aria-live="polite">0</span>
+      </button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <i class="bi bi-chevron-right"></i></a>
+      <a href="home-2.html" class="mobile-nav-link">Home 2 <i class="bi bi-chevron-right"></i></a>
+      <a href="products.html" class="mobile-nav-link active">Products <i class="bi bi-chevron-right"></i></a>
+      <a href="about.html" class="mobile-nav-link">About <i class="bi bi-chevron-right"></i></a>
+      <a href="services.html" class="mobile-nav-link">Services <i class="bi bi-chevron-right"></i></a>
+      <a href="bulk-gifting.html" class="mobile-nav-link">Bulk & Gifting <i class="bi bi-chevron-right"></i></a>
+      <a href="contact.html" class="mobile-nav-link">Contact <i class="bi bi-chevron-right"></i></a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <div class="mobile-toggles-row">
+        <button type="button" class="toggle-card-btn theme-toggle-btn">
+          <i class="bi bi-moon-stars-fill"></i>
+          <span class="btn-label">Dark</span>
+        </button>
+        <button type="button" class="toggle-card-btn rtl-toggle-btn">
+          <i class="bi bi-translate"></i>
+          <span class="btn-label">RTL</span>
+        </button>
+      </div>
+      <button type="button" class="btn btn-primary order-now-btn" style="width: 100%;">
+        Order Now
+      </button>
+    </div>
+  </aside>
+
+  <!-- SHOPPING CART DRAWER -->
+  <div class="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" role="dialog" aria-modal="true" aria-label="Your Shopping Basket">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">
+        <i class="bi bi-bag-heart-fill" style="color: var(--color-secondary);"></i>
+        Your Basket
+      </h3>
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <span class="cart-drawer-count">0 items</span>
+        <button type="button" class="btn-icon-only cart-drawer-close" aria-label="Close basket">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+    </div>
+    <div class="cart-items-container"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-shipping-notice">
+        <i class="bi bi-truck"></i>
+        <span>Free traditional packing on orders above ₹999</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Estimated Subtotal</span>
+        <span class="cart-subtotal-val" style="font-weight: 600;">₹0</span>
+      </div>
+      <div class="cart-total-row">
+        <span>Total (Demo)</span>
+        <span class="cart-total-val">₹0</span>
+      </div>
+      <button type="button" class="btn btn-secondary cart-checkout-btn" style="width: 100%;">
+        <i class="bi bi-send-check"></i> Enquire / Order Summary
+      </button>
+      <p class="cart-demo-notice">
+        * Prototype retail store: prices shown are illustrative demo values.
+      </p>
+    </div>
+  </aside>
+
+  <!-- PRODUCT DETAIL MODAL -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-label="Product Details">
+    <div class="product-modal">
+      <button type="button" class="modal-close-btn" aria-label="Close product view">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <div class="modal-media">
+        <img src="" alt="" class="modal-media-img" />
+      </div>
+      <div class="modal-content">
+        <div>
+          <span class="modal-category-badge">Category</span>
+          <h2 class="modal-title">Product Name</h2>
+        </div>
+        <div class="modal-taste-tags">
+          <span class="taste-tag spice-level modal-spice-tag">Spice Level</span>
+          <span class="taste-tag modal-taste-tag">Taste Profile</span>
+        </div>
+        <p class="modal-description">Product detailed description...</p>
+        
+        <div class="modal-meta-grid">
+          <div>
+            <div class="meta-field-label">Ingredients</div>
+            <div class="meta-field-val modal-ingredients-val" style="font-size: 0.8rem; line-height: 1.4;">Pure spices</div>
+          </div>
+          <div>
+            <div class="meta-field-label">Storage Care</div>
+            <div class="meta-field-val modal-storage-val" style="font-size: 0.8rem; line-height: 1.4;">Cool dry pantry</div>
+          </div>
+        </div>
+
+        <div class="modal-weight-selector">
+          <span class="meta-field-label">Select Pack Size</span>
+          <div class="weight-options-row modal-weight-buttons"></div>
+        </div>
+
+        <div class="modal-price-row">
+          <span class="modal-price">₹0</span>
+          <span class="modal-demo-tag">* Sample demo price</span>
+        </div>
+
+        <div class="modal-actions-row">
+          <button type="button" class="btn btn-primary" onclick="addModalItemToCart()">
+            <i class="bi bi-cart-plus"></i> Add to Basket
+          </button>
+          <button type="button" class="btn btn-outline" onclick="closeProductModal()">
+            Keep Browsing
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MAIN CONTENT: PRODUCTS DISCOVERY
+       ====================================================================== -->
+  <main id="mainContent">
+
+        <!-- ------------------------------------------------------------------
+         SECTION 01 — PRODUCT INTRODUCTION BANNER (Unified Hero)
+         ------------------------------------------------------------------ -->
+    <section class="page-hero-banner hero-products" aria-labelledby="productsIntroHeadline">
+      <div class="container hero-banner-container">
+        <span class="section-meta">Handcrafted Small-Batch Pantry</span>
+        <h1 id="productsIntroHeadline" class="section-heading">
+          OUR HOMEMADE COLLECTION.
+        </h1>
+        <p class="section-description" style="margin-inline: auto;">
+          Traditional flavours, carefully prepared and packed for your everyday meals. From slow-cured pickles to crisp terrace-dried vadams, explore recipes made with genuine patience.
+        </p>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 02 — CATEGORY NAVIGATION (Interactive Filters)
+         ------------------------------------------------------------------ -->
+    <nav class="category-filter-bar" aria-label="Product Categories Filter">
+      <div class="container">
+        <div class="filter-pills-scroll" role="tablist">
+          <button type="button" class="filter-pill active" data-filter="all" role="tab" aria-selected="true">
+            All Products (20)
+          </button>
+          <button type="button" class="filter-pill" data-filter="mango-pickles" role="tab" aria-selected="false">
+            Mango Pickles
+          </button>
+          <button type="button" class="filter-pill" data-filter="lemon-pickles" role="tab" aria-selected="false">
+            Lemon Pickles
+          </button>
+          <button type="button" class="filter-pill" data-filter="vegetable-pickles" role="tab" aria-selected="false">
+            Vegetable Pickles
+          </button>
+          <button type="button" class="filter-pill" data-filter="garlic-special-pickles" role="tab" aria-selected="false">
+            Garlic & Special Pickles
+          </button>
+          <button type="button" class="filter-pill" data-filter="traditional-papad" role="tab" aria-selected="false">
+            Traditional Papad
+          </button>
+          <button type="button" class="filter-pill" data-filter="appalam" role="tab" aria-selected="false">
+            Appalam
+          </button>
+          <button type="button" class="filter-pill" data-filter="masala-papad" role="tab" aria-selected="false">
+            Masala Papad
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 03 — PRODUCT COLLECTION (20 Handcrafted Items)
+         ------------------------------------------------------------------ -->
+    <section class="section-spacing" aria-label="Products Catalogue">
+      <div class="container">
+        <!-- Rendered dynamically by main.js with all 20 authentic items -->
+        <div class="products-catalogue-grid" id="productsCatalogueGrid" role="region" aria-live="polite">
+          <!-- Fallback or dynamic content -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 05 — PRODUCT QUALITY ASSURANCE (Artisan Purity Standards)
+         ------------------------------------------------------------------ -->
+    <section class="section-spacing quality-editorial-strip" aria-labelledby="qualityHeadline">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin-inline: auto; margin-bottom: 3.5rem;">
+          <span class="section-meta">The Rivaya Purity Standard</span>
+          <h2 id="qualityHeadline" class="section-heading">
+            CRAFTED WITH UNCOMPROMISING CARE
+          </h2>
+          <p class="section-description">
+            Every bottle and every papad pack reflects traditional kitchen virtues passed down through mothers and grandmothers.
+          </p>
+        </div>
+
+        <div class="quality-quad-grid">
+          <!-- Card 01 -->
+          <article class="quality-feature-block">
+            <span class="q-card-num" aria-hidden="true">01</span>
+            <div class="q-icon-wrap">
+              <i class="bi bi-feather"></i>
+            </div>
+            <span class="q-pillar-tag">ORIGIN &amp; HARVEST</span>
+            <h4>Selected Ingredients</h4>
+            <p>Firm green Rajapuri mangoes, Kagzi lemons, and wild Guntur chillies sourced strictly from verified regional smallholders.</p>
+            <div class="q-card-badge">
+              <i class="bi bi-patch-check-fill text-gold"></i>
+              <span>100% Traceable Harvest</span>
+            </div>
+          </article>
+
+          <!-- Card 02 -->
+          <article class="quality-feature-block">
+            <span class="q-card-num" aria-hidden="true">02</span>
+            <div class="q-icon-wrap">
+              <i class="bi bi-sun-fill"></i>
+            </div>
+            <span class="q-pillar-tag">ANCESTRAL METHOD</span>
+            <h4>Traditional Preparation</h4>
+            <p>Stone-pounded spices roasted on cast-iron pans and 21-day solar curing in ceramic Bharanis under natural sunlight.</p>
+            <div class="q-card-badge">
+              <i class="bi bi-patch-check-fill text-gold"></i>
+              <span>Zero Industrial Haste</span>
+            </div>
+          </article>
+
+          <!-- Card 03 -->
+          <article class="quality-feature-block">
+            <span class="q-card-num" aria-hidden="true">03</span>
+            <div class="q-icon-wrap">
+              <i class="bi bi-droplet-half"></i>
+            </div>
+            <span class="q-pillar-tag">NATURAL PRESERVATION</span>
+            <h4>Cold-Pressed Sesame Seal</h4>
+            <p>Wood-churned unrefined sesame and mustard oils that naturally seal in antioxidants and rich aromatics without chemicals.</p>
+            <div class="q-card-badge">
+              <i class="bi bi-patch-check-fill text-gold"></i>
+              <span>Zero Acetic Acid</span>
+            </div>
+          </article>
+
+          <!-- Card 04 -->
+          <article class="quality-feature-block">
+            <span class="q-card-num" aria-hidden="true">04</span>
+            <div class="q-icon-wrap">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <span class="q-pillar-tag">TRANSIT SAFETY</span>
+            <h4>Thoughtful Packaging</h4>
+            <p>Food-grade glass jars and clean airtight pouches protected by multi-ply cushioning for leak-proof, break-safe transit.</p>
+            <div class="q-card-badge">
+              <i class="bi bi-patch-check-fill text-gold"></i>
+              <span>Break-Proof Guarantee</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------
+         SECTION 06 — FINAL CTA
+         ------------------------------------------------------------------ -->
+    <!-- ------------------------------------------------------------------
+         SECTION 06 — COMPACT BESPOKE BANNER (Warm Terracotta Accent)
+         ------------------------------------------------------------------ -->
+    <section class="products-compact-cta-section" aria-labelledby="bespokeCtaHeadline">
+      <div class="container">
+        <div class="products-compact-cta-bar">
+          <div class="compact-cta-text">
+            <span class="compact-cta-kicker"><i class="bi bi-star-fill"></i> CUSTOM BATCHES &amp; CATERING</span>
+            <h3 id="bespokeCtaHeadline" class="compact-cta-title">Need Custom Jars, Less Spice, or Bulk Tins?</h3>
+            <p class="compact-cta-desc">Our kitchen cooks adjust spice levels and prepare custom sealed packs for family celebrations, weddings, and hostel hampers.</p>
+          </div>
+          <div class="compact-cta-actions">
+            <a href="contact.html" class="btn btn-compact-white">
+              CUSTOM ORDER DESK <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="bulk-gifting.html" class="btn btn-compact-outline">
+              VIEW GIFT HAMPERS
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       GLOBAL FOOTER
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-brand-logo" aria-label="Rivaya Home">
+            <svg class="logo-vessel-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M18 6H30V10H18V6Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 10C14 10 12 16 12 22C12 36 17 42 24 42C31 42 36 36 36 22C36 16 34 10 34 10H14Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 20C17 21.5 31 21.5 36 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="30" r="4" fill="currentColor"/>
+            </svg>
+            <span class="logo-title">RIVAYA</span>
+          </a>
+          <p class="footer-brand-desc">
+            Authentic South Indian pickles, sun-dried papads, and handcrafted meal accompaniments. Rooted in tradition. Made with love.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-btn" aria-label="Visit Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Visit Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Connect on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Watch YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2 (Editorial)</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="about.html">About Brand</a></li>
+            <li><a href="services.html">Services Hub</a></li>
+            <li><a href="bulk-gifting.html">Bulk & Gifting</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Categories</h4>
+          <ul class="footer-links-list">
+            <li><a href="products.html?category=mango-pickles">Mango Pickles</a></li>
+            <li><a href="products.html?category=lemon-pickles">Lemon Pickles</a></li>
+            <li><a href="products.html?category=vegetable-pickles">Vegetable Pickles</a></li>
+            <li><a href="products.html?category=garlic-special-pickles">Garlic & Special</a></li>
+            <li><a href="products.html?category=traditional-papad">Sun-Dried Papad</a></li>
+            <li><a href="products.html?category=appalam">South Appalam</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Gifting & Orders</h4>
+          <ul class="footer-links-list">
+            <li><a href="bulk-gifting.html">Festive Gift Boxes</a></li>
+            <li><a href="bulk-gifting.html">Wedding Kalyanam Hampers</a></li>
+            <li><a href="bulk-gifting.html">Bulk Restaurant Supply</a></li>
+            <li><a href="services.html">Everyday Deliveries</a></li>
+            <li><a href="services.html#storageCare">Storage Guidelines</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Get in Touch</h4>
+          <ul class="footer-links-list">
+            <li class="footer-contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>Heritage Kitchen & Packing Studio, South India (Demo Location)</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <span>care@rivaya.demo</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-telephone"></i>
+              <span>+91 98765 43210 (Demo Contact)</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="bi bi-clock"></i>
+              <span>Mon – Sat: 9:00 AM – 7:00 PM IST</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>&copy; 2026 Rivaya. All rights reserved. Client Prototype Experience.</span>
+        <span>Crafted with pride • Authentic South Indian Culinary Heritage</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

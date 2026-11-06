@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <style>
+    :root {
+      --primary: #2C3E2D;
+      --accent: #B96543;
+      --fill-bg: rgba(185, 101, 67, 0.18);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #F3EBDD;
+        --accent: #E07A5F;
+        --fill-bg: rgba(224, 122, 95, 0.28);
+      }
+    }
+  </style>
+  <!-- Traditional Indian Pickle Martaban / Bharani Vessel -->
+  <path d="M18 5H30V9H18V5Z" fill="var(--primary)" stroke="var(--primary)" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M14 9C14 9 12 15 12 21C12 35 17 41 24 41C31 41 36 35 36 21C36 15 34 9 34 9H14Z" fill="var(--fill-bg)" stroke="var(--primary)" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M12 19C17 20.5 31 20.5 36 19" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="24" cy="29" r="4.5" fill="var(--accent)"/>
+</svg>
