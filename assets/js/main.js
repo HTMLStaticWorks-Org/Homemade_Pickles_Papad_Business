@@ -333,6 +333,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initForms();
   initFavorites();
   initBackToTop();
+  initFaqAccordion();
 });
 
 // -----------------------------------------------------------------------------
@@ -381,6 +382,9 @@ function applyTheme(theme) {
 }
 
 function applyDirection(dir) {
+  // Suppress transitions temporarily so sliding drawers and direction-flipped elements do not fly across screen
+  document.documentElement.classList.add("no-direction-transition");
+
   RIVAYA_STATE.dir = dir;
   localStorage.setItem("rivaya_dir", dir);
   document.documentElement.setAttribute("dir", dir);
@@ -389,6 +393,14 @@ function applyDirection(dir) {
     const label = btn.querySelector(".btn-label");
     if (label) label.textContent = dir === "ltr" ? "RTL" : "LTR";
     btn.setAttribute("aria-label", `Switch to ${dir === "ltr" ? "RTL" : "LTR"} layout`);
+  });
+
+  // Force reflow so browser applies the dir switch without transitions
+  void document.documentElement.offsetWidth;
+
+  // Restore transitions cleanly on next frame
+  requestAnimationFrame(() => {
+    document.documentElement.classList.remove("no-direction-transition");
   });
 }
 
@@ -1120,4 +1132,50 @@ function initBackToTop() {
 
   window.addEventListener("scroll", toggleBackToTop, { passive: true });
   toggleBackToTop();
+}
+
+// -----------------------------------------------------------------------------
+// FAQ ACCORDION DROPDOWN METHOD
+// -----------------------------------------------------------------------------
+function initFaqAccordion() {
+  const accordions = document.querySelectorAll(".faq-accordion");
+  if (!accordions.length) return;
+
+  accordions.forEach(accordion => {
+    const items = accordion.querySelectorAll(".faq-item");
+
+    items.forEach(item => {
+      const trigger = item.querySelector(".faq-trigger");
+      if (!trigger) return;
+
+      // Sync initial ARIA state
+      if (item.classList.contains("active")) {
+        trigger.setAttribute("aria-expanded", "true");
+      } else {
+        trigger.setAttribute("aria-expanded", "false");
+      }
+
+      trigger.addEventListener("click", () => {
+        const isCurrentlyActive = item.classList.contains("active");
+
+        // Close other items in the same accordion group
+        items.forEach(sibling => {
+          if (sibling !== item && sibling.classList.contains("active")) {
+            sibling.classList.remove("active");
+            const sibTrigger = sibling.querySelector(".faq-trigger");
+            if (sibTrigger) sibTrigger.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        // Toggle current item
+        if (isCurrentlyActive) {
+          item.classList.remove("active");
+          trigger.setAttribute("aria-expanded", "false");
+        } else {
+          item.classList.add("active");
+          trigger.setAttribute("aria-expanded", "true");
+        }
+      });
+    });
+  });
 }
